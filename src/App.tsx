@@ -14,7 +14,6 @@ function App() {
 
   return (
     <div className="flex flex-col h-screen max-h-screen bg-background overflow-hidden">
-      {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 border-b bg-card shrink-0 z-30 relative">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
@@ -34,9 +33,7 @@ function App() {
         </Dialog>
       </header>
 
-      {/* Main Content */}
       <main className="flex flex-1 overflow-hidden relative">
-        {/* Left Panel: Blog List */}
         <aside className={cn(
           "w-full md:w-80 lg:w-96 border-r flex flex-col shrink-0 bg-muted/30 transition-all duration-300 md:translate-x-0 absolute inset-0 z-20 md:relative",
           selectedBlogId ? "-translate-x-full md:translate-x-0" : "translate-x-0"
@@ -50,7 +47,6 @@ function App() {
           />
         </aside>
 
-        {/* Right Panel: Blog Detail */}
         <section className={cn(
           "flex-1 overflow-hidden bg-card transition-all duration-300 h-full absolute inset-0 z-10 md:relative md:translate-x-0",
           selectedBlogId ? "translate-x-0" : "translate-x-full md:translate-x-0"
